@@ -83,7 +83,11 @@ set_brightness(int percentage)
 static void
 usage(void)
 {
-    printf("Usage: backlight [-h] [-s percent | -i percent | -d percent]\n");
+    printf("Usage: backlight [-h] [-s percent | -i percent | -d percent]\n"
+           "    -h Print this help\n"
+           "    -s Set current brightness percentage\n"
+           "    -i Increment brightness percentage\n"
+           "    -d Decrement brightness percentage\n");
     exit(EXIT_SUCCESS);
 }
 
